@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1227CED85C95ABC5FF463877 /* Pods_whatAnimal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85ED233508C1CF3A25DA9D37 /* Pods_whatAnimal.framework */; };
 		9202E36921E4EC87007EEAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202E36821E4EC87007EEAE6 /* AppDelegate.swift */; };
 		9202E36B21E4EC87007EEAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9202E36A21E4EC87007EEAE6 /* ViewController.swift */; };
 		9202E36E21E4EC87007EEAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9202E36C21E4EC87007EEAE6 /* Main.storyboard */; };
 		9202E37021E4EC88007EEAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9202E36F21E4EC88007EEAE6 /* Assets.xcassets */; };
 		9202E37321E4EC88007EEAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9202E37121E4EC88007EEAE6 /* LaunchScreen.storyboard */; };
+		9202E37B21E4F14E007EEAE6 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9202E37A21E4F14E007EEAE6 /* ImageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37751A000F25276590D9512E /* Pods-whatAnimal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatAnimal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whatAnimal/Pods-whatAnimal.debug.xcconfig"; sourceTree = "<group>"; };
+		85ED233508C1CF3A25DA9D37 /* Pods_whatAnimal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatAnimal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9202E36521E4EC87007EEAE6 /* whatAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9202E36821E4EC87007EEAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9202E36A21E4EC87007EEAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		9202E36F21E4EC88007EEAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9202E37221E4EC88007EEAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9202E37421E4EC88007EEAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9202E37A21E4F14E007EEAE6 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		FC807092055F77CD3AB308F6 /* Pods-whatAnimal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatAnimal.release.xcconfig"; path = "Pods/Target Support Files/Pods-whatAnimal/Pods-whatAnimal.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1227CED85C95ABC5FF463877 /* Pods_whatAnimal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1F91003758130EE2AB8C1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85ED233508C1CF3A25DA9D37 /* Pods_whatAnimal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9202E35C21E4EC86007EEAE6 = {
 			isa = PBXGroup;
 			children = (
 				9202E36721E4EC87007EEAE6 /* whatAnimal */,
 				9202E36621E4EC87007EEAE6 /* Products */,
+				DC324A2354EFC3978EA618CD /* Pods */,
+				0A1F91003758130EE2AB8C1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				9202E36F21E4EC88007EEAE6 /* Assets.xcassets */,
 				9202E37121E4EC88007EEAE6 /* LaunchScreen.storyboard */,
 				9202E37421E4EC88007EEAE6 /* Info.plist */,
+				9202E37A21E4F14E007EEAE6 /* ImageClassifier.mlmodel */,
 			);
 			path = whatAnimal;
+			sourceTree = "<group>";
+		};
+		DC324A2354EFC3978EA618CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37751A000F25276590D9512E /* Pods-whatAnimal.debug.xcconfig */,
+				FC807092055F77CD3AB308F6 /* Pods-whatAnimal.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9202E37721E4EC88007EEAE6 /* Build configuration list for PBXNativeTarget "whatAnimal" */;
 			buildPhases = (
+				59373549CC4AA1F6838D4084 /* [CP] Check Pods Manifest.lock */,
 				9202E36121E4EC87007EEAE6 /* Sources */,
 				9202E36221E4EC87007EEAE6 /* Frameworks */,
 				9202E36321E4EC87007EEAE6 /* Resources */,
+				348B172F3B74EB7DEE433558 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		348B172F3B74EB7DEE433558 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-whatAnimal/Pods-whatAnimal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-whatAnimal/Pods-whatAnimal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59373549CC4AA1F6838D4084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whatAnimal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9202E36121E4EC87007EEAE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9202E36B21E4EC87007EEAE6 /* ViewController.swift in Sources */,
+				9202E37B21E4F14E007EEAE6 /* ImageClassifier.mlmodel in Sources */,
 				9202E36921E4EC87007EEAE6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +361,7 @@
 		};
 		9202E37821E4EC88007EEAE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37751A000F25276590D9512E /* Pods-whatAnimal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +379,7 @@
 		};
 		9202E37921E4EC88007EEAE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC807092055F77CD3AB308F6 /* Pods-whatAnimal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
